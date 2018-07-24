@@ -1,0 +1,622 @@
+@import "../common/mixin.scss";
+div#comment-reward-page{
+    background-color: #fafafc;
+    .item-tech{
+        padding: px2rem(26px) px2rem(28px) px2rem(5px);
+        background-color: #fff;
+        >.item-tech-head{
+            width: px2rem(96px);
+            height: px2rem(96px);
+            border: 1px solid #fff;
+            border-radius: 100%;
+            display: inline-block;
+            vertical-align: top;
+            background-size: 100% 100%;
+        }
+        >.item-tech-info{
+            display: inline-block;
+            margin-left: px2rem(29px);
+            >.item-tech-name{
+                color: #000;
+                font-size: px2rem(36px);
+                >span{
+                    width: px2rem(110px);
+                    height: px2rem(40px);
+                    line-height: px2rem(40px);
+                    display: inline-block;
+                    text-align: center;
+                    color: #333;
+                    font-size: px2rem(30px);
+                    border: 1px solid #999;
+                    border-radius: px2rem(40px);
+                    margin-left: px2rem(12px);
+                }
+            }
+            >.item-tech-desc{
+                font-size: px2rem(28px);
+                color: #999;
+            }
+        }
+    }
+
+    .item-comment{
+        background-color: #fff;
+        >.item-comment-stars{
+            text-align: center;
+            >.item-comment-face{
+                width: px2rem(134px);
+                display: inline-block;
+                >div{
+                    text-align: center;
+                    &:nth-of-type(1){
+                        font-size: px2rem(23px);
+                        color: #ccc;
+                    }
+                    &:nth-of-type(2){
+                        width: px2rem(93px);
+                        height: px2rem(93px);
+                        margin: 0 auto;
+                        background-size: 100% 100%;
+                    }
+                    &:nth-of-type(3){
+                        height: px2rem(16px);
+                        margin: 0 auto;
+                    }
+                }
+                &:nth-of-type(1){
+                    >.item-face{@include img('../assets/icons/commentReward/04.png',100% 100%);}
+                }
+                &:nth-of-type(2){
+                    >.item-face{@include img('../assets/icons/commentReward/02.png',100% 100%);}
+                }
+                &:nth-of-type(3){
+                    >.item-face{@include img('../assets/icons/commentReward/03.png',100% 100%);}
+                }
+                &:nth-of-type(4){
+                    >.item-face{@include img('../assets/icons/commentReward/01.png',100% 100%);}
+                }
+                &:nth-of-type(5){
+                    >.item-face{@include img('../assets/icons/commentReward/00.png',100% 100%);}
+                }
+                &.active{
+                    >div{
+                        &:nth-of-type(1){
+                            color: #222;
+                        }
+                    }
+                    &:nth-of-type(1){
+                        >.item-face{
+                            @include img('../assets/icons/commentReward/004.png',100% 100%);
+                        }
+                        >.item-star{
+                            width: px2rem(18px);
+                            @include img('../assets/icons/commentReward/star01.png',100% 100%);
+                        }
+                    }
+                    &:nth-of-type(2){
+                        >.item-face{
+                            @include img('../assets/icons/commentReward/002.png',100% 100%);
+                        }
+                        >.item-star{
+                            width: px2rem(38px);
+                            @include img('../assets/icons/commentReward/star02.png',100% 100%);
+                        }
+                    }
+                    &:nth-of-type(3){
+                        >.item-face{
+                            @include img('../assets/icons/commentReward/003.png',100% 100%);
+                        }
+                        >.item-star{
+                            width: px2rem(59px);
+                            @include img('../assets/icons/commentReward/star03.png',100% 100%);
+                        }
+                    }
+                    &:nth-of-type(4){
+                        >.item-face{
+                            @include img('../assets/icons/commentReward/001.png',100% 100%);
+                        }
+                        >.item-star{
+                            width: px2rem(79px);
+                            @include img('../assets/icons/commentReward/star04.png',100% 100%);
+                        }
+                    }
+                    &:nth-of-type(5){
+                        >.item-face{
+                            @include img('../assets/icons/commentReward/000.png',100% 100%);
+                        }
+                        >.item-star{
+                            width: px2rem(99px);
+                            @include img('../assets/icons/commentReward/star05.png',100% 100%);
+                        }
+                    }
+                }
+            }
+            >.item-comment-labels{
+                text-align: center;
+                background-color: #fafafc;
+                padding: px2rem(15px) 0;
+                margin-top: px2rem(20px);
+                >div{
+                    width: px2rem(124px);
+                    height: px2rem(52px);
+                    display: inline-block;
+                    font-size: px2rem(24px);
+                    border: 1px solid #ccc;
+                    border-radius: px2rem(26px);
+                    color: #999;
+                    &:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(4),&:nth-of-type(5){
+                        margin-left: px2rem(10px);
+                    }
+                    &.active{
+                        color: #ff6666;
+                        border: 1px solid #ff6666;
+                    }
+                }
+            }
+        }
+    }
+
+    .item-write-comment{
+        height: px2rem(260px);
+        padding: px2rem(20px) px2rem(30px);
+        position: relative;
+        background-color: #fff;
+        >textarea{
+            width: px2rem(640px);
+            height: 3.82777rem;
+            line-height: px2rem(41px);
+            background-color: #f8f8f8;
+            font-size: px2rem(26px);
+            color: #333;
+            padding: px2rem(10px) px2rem(10px) px2rem(10px);
+        }
+        >.item-write-click{
+            position: absolute;
+            top: 0.9rem;
+            margin-left: px2rem(10px);
+            color: #999;
+            font-size: px2rem(25px);
+            pointer-events: none;
+            &:before{
+                content: "点击这里";
+                display: inline-block;
+                color: #6996e0;
+                font-size: px2rem(28px);
+            }
+            &.none{
+                display: none;
+            }
+        }
+        >.item-write-anonymous{
+            margin-top: -0.5rem;
+            font-size: px2rem(28px);
+            color: #000;
+            background-color: #f8f8f8;
+            width: 18.335rem;
+            height: 1.45rem;
+            position: absolute;
+            >span{
+                position: absolute;
+                &:nth-of-type(1){
+                    left: 1.8rem;
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        width: px2rem(32px);
+                        height: px2rem(32px);
+                        border-radius: 100%;
+                        left: px2rem(-45px);
+                        top: px2rem(11px);
+                        // border: 1px solid #ccc;
+                        background-color: #e6e6e6;
+                    }
+                    &.active{
+                        &:before{
+                            border: 1px solid transparent;
+                            @include img('../assets/icons/commentReward/selected.png',100% 100%);
+                        }
+                    }
+                }
+                &:nth-of-type(2){
+                    font-size: px2rem(24px);
+                    right: px2rem(42px);
+                    >i{
+                        color: #b3b3b3;
+                    }
+                }
+            }
+        }
+    }
+
+    .item-reward{
+        background-color: #fff;
+        .item-reward-dashed{
+            height: px2rem(44px);
+            background-color: #fafafc;
+            font-size: px2rem(28px);
+            text-align: center;
+            position: relative;
+            >p{
+                width: px2rem(654px);
+                height: 1px;
+                position: absolute;
+                top: px2rem(27px);
+                left: 50%;
+                margin-left: px2rem(-327px);
+                border-top: 1px dashed #ccc;
+            }
+            >div{
+                width: px2rem(145px);
+                line-height: px2rem(55px);
+                position: absolute;
+                left: 50%;
+                margin-left: px2rem(-72px);
+                color: #ccc;
+                background-color: #fafafc;
+            }
+        }
+        .item-reward-tab{
+            background-color: #fafafc;
+            padding: 0 px2rem(36px) px2rem(10px);
+            >div{
+                width: px2rem(80px);
+                display: inline-block;
+                color: #333;
+                font-size: px2rem(28px);
+                position: relative;
+                text-align: center;
+                &:nth-of-type(2){
+                    margin-left: px2rem(25px);
+                }
+                &.active{
+                    color: #ff6666;
+                    &:before{
+                        content: "";
+                        width: px2rem(80px);
+                        height: px2rem(4px);
+                        position: absolute;
+                        left: 0;
+                        bottom: px2rem(-10px);
+                        background-color: #ff6666;
+                    }
+                }
+            }
+            >.user-integral{
+                font-size: px2rem(22px);
+                float: right;
+                color: #a4695f;
+                margin-top: 0.2rem;
+            }
+        }
+
+        .item-reward-money{
+            height: px2rem(218px);
+            text-align: center;
+            padding-top: px2rem(25px);
+            border-top: 1px solid #ccc;
+            >.money{
+                width: px2rem(160px);
+                font-size: px2rem(24px);
+                display: inline-block;
+                >div{
+                    &:nth-of-type(1){
+                        width: px2rem(120px);
+                        height: px2rem(88px);
+                        margin: auto;
+                        color: #fff;
+                        font-size: px2rem(22px);
+                        padding-top: px2rem(30px);
+                        // @include img('../assets/icons/commentReward/good.png',100% 100%);
+                    }
+                    &:nth-of-type(2){
+                        color: #333;
+                        text-align: center;
+                    }
+                }
+                .amountType0{
+                    @include img('../assets/icons/commentReward/good.png',100% 100%);
+                }
+                .amountType1{
+                    @include img('../assets/icons/commentReward/redPacket.png',100% 100%);
+                }
+                .amountType2{
+                    @include img('../assets/icons/commentReward/money.png',100% 100%);
+                }
+                &.active{
+                    >div{
+                        position: relative;
+                        &:nth-of-type(1){
+                            &:before{
+                                content: "";
+                                position: absolute;
+                                top: 0;
+                                left: -8px;
+                                width: px2rem(150px);
+                                height: px2rem(140px);
+                                background-color: rgba(255, 255, 255, 0.7);
+                                @include img('../assets/icons/commentReward/gifts_active.png',100% 100%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .item-reward-integral{
+            height: px2rem(218px);
+            text-align: center;
+            padding-top: px2rem(25px);
+            position: relative;
+            border-top: 1px solid #ccc;
+            >.integral{
+                width: 4.44444rem;
+                font-size: px2rem(24px);
+                display: inline-block;
+                >div{
+                    &:nth-of-type(1){
+                        width: px2rem(120px);
+                        height: px2rem(88px);
+                        margin: auto;
+                        @include img('../assets/icons/commentReward/mouth.png',100% 100%);
+                    }
+                    &:nth-of-type(2){
+                        color: #f5bc00;
+                        text-align: center;
+                        position: relative;
+                        &:after{
+                            content: "";
+                            width: px2rem(16px);
+                            height: px2rem(16px);
+                            display: inline-block;
+                            margin-left: px2rem(6px);
+                            @include img('../assets/icons/commentReward/integral.png',100% 100%);
+                        }
+                    }
+                }
+                &:nth-of-type(2){
+                    >div{
+                        &:nth-of-type(1){
+                            // width: px2rem(76px);
+                            // height: px2rem(90px);
+                            @include img('../assets/icons/commentReward/flower.png',100% 100%);
+                        }
+                    }
+                }
+                &:nth-of-type(3){
+                    >div{
+                        &:nth-of-type(1){
+                            @include img('../assets/icons/commentReward/chocolate.png',100% 100%);
+                        }
+                    }
+                }
+                &:nth-of-type(4){
+                    >div{
+                        &:nth-of-type(1){
+                            @include img('../assets/icons/commentReward/car.png',100% 100%);
+                        }
+                    }
+                }
+                &.insuInte{
+                    >div{
+                        position: relative;
+                        &:nth-of-type(1){
+                            &:before{
+                                content: "";
+                                position: absolute;
+                                left: -8px;
+                                width: px2rem(150px);
+                                height: px2rem(140px);
+                                background-color: rgba(255, 255, 255, 0.8);
+                                @include img('../assets/icons/commentReward/integral_active.png',100% 100%);
+                            }
+                        }
+                    }
+                    &:nth-of-type(2){
+                        >div{
+                            &:nth-of-type(1){
+                                &:before{
+                                }
+                            }
+                        }
+                    }
+                }
+                &.active{
+                    >div{
+                        position: relative;
+                        &:nth-of-type(1){
+                            &:before{
+                                content: "";
+                                position: absolute;
+                                top: 0;
+                                left: -8px;
+                                width: px2rem(150px);
+                                height: px2rem(140px);
+                                background-color: rgba(255, 255, 255, 0.7);
+                                @include img('../assets/icons/commentReward/gift_active.png',100% 100%);
+                            }
+                        }
+                    }
+                }
+            }
+            >.user-integral{
+                font-size: px2rem(22px);
+                float: right;
+                color: #a4695f;
+                margin-top: 0.2rem;
+            }
+        }
+    }
+
+    .item-reward-none{
+        background-color: #fafafc;
+        padding: 1.1rem 0;
+        >div{
+            &:nth-of-type(1){
+                width: px2rem(139px);
+                height: px2rem(157px);
+                margin: auto;
+                @include img('../assets/icons/commentReward/sang.png',100% 100%);
+            }
+            &:nth-of-type(2){
+                text-align: center;
+                color: #a4695f;
+                font-size: px2rem(28px);
+                letter-spacing: 0.04rem;
+            }
+        }
+    }
+
+    .item-submit-button{
+        height: px2rem(88px);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #ff6666;
+        text-align: center;
+        line-height: px2rem(88px);
+        color: #fff;
+        &.active{
+            background-color: #999;
+        }
+    }
+
+    .item-no{
+        height: 2.44444rem;
+    }
+
+    .item-comment-success{
+        >div{
+            width: px2rem(590px);
+            height: px2rem(375px);
+            background-color: #fff;
+            border-radius: px2rem(12px);
+            position: absolute;
+            left: 50%;
+            margin-left: px2rem(-295px);
+            top: px2rem(383px);
+            >div{
+                &:nth-of-type(1){
+                    width: px2rem(94px);
+                    height: px2rem(94px);
+                    margin: px2rem(43px) auto 0;
+                    @include img('../assets/icons/commentReward/success.png',100% 100%);
+                }
+                &:nth-of-type(2){
+                    font-size: px2rem(40px);
+                    text-align: center;
+                    margin-top: px2rem(34px);
+                    color: #4a4a4a;
+                }
+                &:nth-of-type(3){
+                    height: px2rem(120px);
+                    border-top: 1px solid #eee;
+                    margin-top: px2rem(25px);
+                    >div{
+                        width: px2rem(475px);
+                        height: px2rem(80px);
+                        line-height: px2rem(80px);
+                        background-color: #ff6666;
+                        border-radius: px2rem(12px);
+                        position: absolute;
+                        bottom: px2rem(20px);
+                        text-align: center;
+                        color: #fff;
+                        margin-left: px2rem(57px);
+                    }
+                }
+            }
+        }
+    }
+
+    .item-comment-reward{
+        >div{
+            width: px2rem(590px);
+            height: px2rem(545px);
+            background-color: #fff;
+            border-radius: px2rem(12px);
+            position: absolute;
+            left: 50%;
+            margin-left: px2rem(-295px);
+            top: px2rem(293px);
+            >div{
+                &:nth-of-type(1){
+                    width: px2rem(151px);
+                    height: px2rem(151px);
+                    margin: px2rem(27px) auto 0;
+                    @include img('../assets/icons/commentReward/dashang.png',100% 100%);
+                }
+                &:nth-of-type(2){
+                    text-align: center;
+                    color: #4a4a4a;
+                    font-size: px2rem(40px);
+                    margin-top: px2rem(25px);
+                }
+                &:nth-of-type(3){
+                    width: px2rem(495px);
+                    height: px2rem(80px);
+                    background-color: #fafafa;
+                    border-radius: px2rem(12px);
+                    border: 1px solid #e5e5e5;
+                    margin: px2rem(38px) auto 0;
+                    padding: 0 px2rem(21px);
+                    >input{
+                        width: 100%;
+                        height: 100%;
+                        color: #ff6666;
+                    }
+                    input::-webkit-input-placeholder {
+                        color: #ccc;
+                    }
+                }
+                &:nth-of-type(4){
+                    height: px2rem(120px);
+                    margin-top: px2rem(25px);
+                    >div{
+                        width: px2rem(475px);
+                        height: px2rem(80px);
+                        line-height: px2rem(80px);
+                        background-color: #ff6666;
+                        border-radius: px2rem(12px);
+                        position: absolute;
+                        bottom: px2rem(20px);
+                        text-align: center;
+                        color: #fff;
+                        left: px2rem(57px);
+                    }
+                }
+            }
+            >span{
+                width: px2rem(21px);
+                height: px2rem(21px);
+                position: absolute;
+                right: px2rem(30px);
+                top: px2rem(30px);
+                @include img('../assets/icons/commentReward/close.png',100% 100%);
+            }
+        }
+    }
+
+    .item-two-comment{
+        >.item{
+            width: 100%;
+            height: px2rem(321px);
+            @include img('../assets/icons/commentReward/banner01.png',100% 100%);
+            &.active{
+                @include img('../assets/icons/commentReward/banner02.png',100% 100%);
+            }
+        }
+        >.item-reward{
+            >.item-reward-money{
+                height: px2rem(188px);
+                border-top: 1px solid transparent;
+                margin-top: px2rem(10px);
+            }
+            >.item-reward-integral{
+                height: px2rem(188px);
+                >.user-integral{
+                    margin-top: px2rem(10px);
+                }
+            }
+        }
+    }
+}

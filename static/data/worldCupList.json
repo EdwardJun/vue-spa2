@@ -1,0 +1,111 @@
+{
+    "respData": [
+        {
+            "clubId": "952748925440237568",
+            "clubName": "小摩豆会所内侧",
+            "recordList": [
+                {
+                    "createTime": "2018-01-02 18:05:05",
+                    "guessTeam": "德国",
+                    "leftTeam": "意大利",
+                    "rightTeam": "德国",
+                    "leftTeamImage": "",
+                    "rightTeamImage": "",
+                    "status": "0",
+                    "winTeam": "德国获胜",
+                    "worldCupActivityId": "123456"
+                },
+                {
+                    "createTime": "2018-01-02 18:05:05",
+                    "guessTeam": "德国",
+                    "leftTeam": "意大利",
+                    "rightTeam": "德国",
+                    "status": "1",
+                    "winTeam": "德国获胜",
+                    "worldCupActivityId": "123456"
+                }
+            ]
+        },
+        {
+            "clubId": "952748925440237568",
+            "clubName": "小摩豆会所内侧",
+            "recordList": [
+                {
+                    "createTime": "2018-01-02 18:05:05",
+                    "guessTeam": "德国",
+                    "leftTeam": "意大利",
+                    "rightTeam": "德国",
+                    "leftTeamImage": "",
+                    "rightTeamImage": "",
+                    "status": "0",
+                    "winTeam": "德国获胜",
+                    "worldCupActivityId": "123456"
+                },
+                {
+                    "createTime": "2018-01-02 18:05:05",
+                    "guessTeam": "德国",
+                    "leftTeam": "意大利",
+                    "rightTeam": "德国",
+                    "status": "1",
+                    "winTeam": "德国获胜",
+                    "worldCupActivityId": "123456"
+                }
+            ]
+        },
+        {
+            "clubId": "952748925440237568",
+            "clubName": "小摩豆会所内侧",
+            "recordList": [
+                {
+                    "createTime": "2018-01-02 18:05:05",
+                    "guessTeam": "德国",
+                    "leftTeam": "意大利",
+                    "rightTeam": "德国",
+                    "leftTeamImage": "",
+                    "rightTeamImage": "",
+                    "status": "0",
+                    "winTeam": "德国获胜",
+                    "worldCupActivityId": "123456"
+                },
+                {
+                    "createTime": "2018-01-02 18:05:05",
+                    "guessTeam": "德国",
+                    "leftTeam": "意大利",
+                    "rightTeam": "德国",
+                    "status": "1",
+                    "winTeam": "德国获胜",
+                    "worldCupActivityId": "123456"
+                }
+            ]
+        },
+        {
+            "clubId": "952748925440237568",
+            "clubName": "小摩豆会所内侧",
+            "recordList": [
+                {
+                    "createTime": "2018-01-02 18:05:05",
+                    "guessTeam": "德国",
+                    "leftTeam": "意大利",
+                    "rightTeam": "德国",
+                    "leftTeamImage": "",
+                    "rightTeamImage": "",
+                    "status": "0",
+                    "winTeam": "德国获胜",
+                    "worldCupActivityId": "123456"
+                },
+                {
+                    "createTime": "2018-01-02 18:05:05",
+                    "guessTeam": "德国",
+                    "leftTeam": "意大利",
+                    "rightTeam": "德国",
+                    "status": "1",
+                    "winTeam": "德国获胜",
+                    "worldCupActivityId": "123456"
+                }
+            ]
+        }
+    ],
+    "statusCode": 200,
+    "pageCount": -1,
+    "msg": "操作成功"
+}

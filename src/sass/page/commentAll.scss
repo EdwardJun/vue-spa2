@@ -1,0 +1,176 @@
+@import "../common/mixin.scss";
+div#comment-all-page{
+    background-color: #efeff4;
+    .item-comment-tab{
+        background-color: #fff;
+        padding: px2rem(25px) px2rem(25px);
+        >div{
+            display: inline-block;
+            padding: 0 px2rem(20px);
+            background-color: #fcf5f5;
+            border-radius: px2rem(25px);
+            font-size: px2rem(26px);
+            color: #666;
+            margin-left: px2rem(10px);
+            &.active{
+                background-color: #ff8c80;
+                color: #fff;
+            }
+        }
+    }
+
+    .item-comment-list{
+        background-color: #fff;
+        margin-top: px2rem(21px);
+        .comments-list{
+            padding: 0 px2rem(24px);
+        }
+        .comments-item{
+            padding: px2rem(25px) 0;
+            border-bottom: 1px dashed #e5e5e5;
+            &:last-child{
+                border-bottom: 1px dashed transparent;
+            }
+            .comments-item_h{
+                display: flex;
+                align-items: center;
+                >div{
+                  &:nth-of-type(1){
+                    flex: none;
+                    width: px2rem(48px);
+                    height: px2rem(48px);
+                    border-radius: 50%;
+                    margin-right: px2rem(18px);
+                    background-size: 100% 100%;
+                  }
+                  &:nth-of-type(2){
+                    font-size: px2rem(28px);
+                    color: #5d698c;
+                    flex: 1;
+                  }
+                  &:nth-of-type(3){
+                    flex: none;
+                    color: #999;
+                    font-size: px2rem(24px);
+                  }
+                }
+            }
+            .comments-grade{
+                // height: px2rem(30px);
+                font-size: px2rem(24px);
+                margin-left: px2rem(66px);
+                color: #666;
+                >div{
+                    width: px2rem(108px);
+                    height: px2rem(18px);
+                    display: inline-block;
+                    @include imgBgFix(px2rem(108px) px2rem(18px));
+                    background-image: url('../assets/icons/comment/stars.png');
+                    >div{
+                        width: px2rem(108px);
+                        height: px2rem(18px);
+                        @include imgBgFix(px2rem(108px) px2rem(18px));
+                        background-image: url('../assets/icons/comment/stars_active.png');
+                    }
+                }
+            }
+            .comments-item_bd{
+                font-size: px2rem(32px);
+                color: #212121;
+                margin: px2rem(5px) 0;
+                margin-left: px2rem(66px);
+            }
+            .comments-item_ft{
+                margin-left: px2rem(66px);
+                >div{
+                  color: #666;
+                  font-size: px2rem(28px);
+                  &::after {
+                    content:".";
+                    display:block;
+                    height:0;
+                    clear:both;
+                    visibility:hidden;
+                  }
+                  >label{
+                    color: #91a1b0;
+                    font-size: px2rem(26px);
+                    &:before{
+                        content: "";
+                        width: px2rem(30px);
+                        height: px2rem(24px);
+                        display: inline-block;
+                        vertical-align: middle;
+                        @include img('../assets/icons/technicianDetail/tag.png', px2rem(30px) px2rem(24px));
+                    }
+                  }
+                  >span{
+                    float: right;
+                    color: #999;
+                    font-size: px2rem(26px);
+                    >i{
+                      color: #ff6666;
+                      font-size: px2rem(30px);
+                    }
+                  }
+                }
+            }
+            .only-reward{
+                margin-left: px2rem(66px);
+                margin-top: 0.5rem;
+                >div{
+                  >span{
+                    color: #666;
+                    font-size: px2rem(32px);
+                    >i{
+                      color: #ff6666;
+                      font-size: px2rem(30px);
+                    }
+                  }
+                }
+            }
+        }
+    }
+
+    .item-not-comment{
+        >div{
+            &:nth-of-type(1){
+                width: px2rem(309px);
+                height: px2rem(306px);
+                @include img('../assets/icons/commentAll/1.png', 100% 100%);
+                margin: px2rem(131px) auto 0;
+            }
+            &:nth-of-type(2){
+                text-align: center;
+                color: #4d4d4d;
+                font-size: px2rem(32px);
+                margin-top: px2rem(41px);
+            }
+            &:nth-of-type(3){
+                width: px2rem(220px);
+                height: px2rem(64px);
+                line-height: px2rem(64px);
+                border-radius: px2rem(10px);
+                background-color: #ff8c80;
+                text-align: center;
+                color: #fff;
+                margin: px2rem(61px) auto 0;
+
+            }
+        }
+    }
+
+    div.finish-load-tips, div.data-load-tip, div.no-comments{
+        height: px2rem(88px);
+        background-color: #f8f8f8;
+        font-size: px2rem(30px);
+        color: #999;
+        >div{
+            font-size: 0.778rem;
+            margin-left: 0.2rem;
+            line-height: px2rem(88px);
+            color: #666;
+            text-align: center;
+        }
+    }
+}

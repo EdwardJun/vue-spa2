@@ -1,0 +1,40 @@
+{
+    "respData": {
+        "guessStartTime": "2018-06-06 10:20:05",
+        "guessEndTime": "2018-06-06 23:20:05",
+        "guessTeam": "中国",
+        "leftTeam": "中国",
+        "leftTeamImg": "",
+        "matchDate": "06-06",
+        "rightTeam": "意大利",
+        "rightTeamImg": "",
+        "matchStatus": 2,
+        "status": 4,
+        "winTeam": "中国",
+        "worldCupActivityId": "123456",
+        "nextActivityId": "123456",
+        "preActivityId": "123456",
+        "baseActivityId": "456789",
+        "quickBtn":"1",
+        "itemList": [
+            {
+                "count": 4,
+                "itemName": "100元现金券",
+                "type": "2"
+            },
+            {
+                "count": 4,
+                "itemName": "泰式按摩",
+                "type": "2"
+            },
+            {
+                "count": 600,
+                "itemName": "积分",
+                "type": "0"
+            }
+        ]
+    },
+    "statusCode": 200,
+    "pageCount": -1,
+    "msg": "操作成功"
+}

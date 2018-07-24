@@ -1,0 +1,346 @@
+@import "../common/mixin.scss";
+div#two-comment-reward-page{
+    .item-tech{
+        padding: px2rem(43px) px2rem(28px) px2rem(14px);
+        background-color: #fff;
+        >.item-tech-head{
+            width: px2rem(96px);
+            height: px2rem(96px);
+            border: 1px solid #fff;
+            border-radius: 100%;
+            display: inline-block;
+            vertical-align: top;
+            background-size: 100% 100%;
+        }
+        >.item-tech-info{
+            display: inline-block;
+            margin-left: px2rem(29px);
+            >.item-tech-name{
+                color: #000;
+                font-size: px2rem(36px);
+                >span{
+                    width: px2rem(110px);
+                    height: px2rem(40px);
+                    line-height: px2rem(40px);
+                    display: inline-block;
+                    text-align: center;
+                    color: #333;
+                    font-size: px2rem(30px);
+                    border: 1px solid #999;
+                    border-radius: px2rem(40px);
+                    margin-left: px2rem(12px);
+                }
+            }
+            >.item-tech-desc{
+                font-size: px2rem(28px);
+                color: #999;
+            }
+        }
+    }
+    .item-reward{
+        .item-reward-money{
+            height: px2rem(218px);
+            text-align: center;
+            padding-top: px2rem(25px);
+            border-top: 1px solid #ccc;
+            >.money{
+                width: px2rem(160px);
+                font-size: px2rem(24px);
+                display: inline-block;
+                >div{
+                    &:nth-of-type(1){
+                        width: px2rem(120px);
+                        height: px2rem(88px);
+                        margin: auto;
+                        color: #fff;
+                        font-size: px2rem(22px);
+                        padding-top: px2rem(30px);
+                        // @include img('../assets/icons/commentReward/good.png',100% 100%);
+                    }
+                    &:nth-of-type(2){
+                        color: #333;
+                        text-align: center;
+                    }
+                }
+                .amountType0{
+                    @include img('../assets/icons/commentReward/good.png',100% 100%);
+                }
+                .amountType1{
+                    @include img('../assets/icons/commentReward/redPacket.png',100% 100%);
+                }
+                .amountType2{
+                    @include img('../assets/icons/commentReward/money.png',100% 100%);
+                }
+                &.active{
+                    >div{
+                        position: relative;
+                        &:nth-of-type(1){
+                            &:before{
+                                content: "";
+                                position: absolute;
+                                top: 0;
+                                left: -8px;
+                                width: px2rem(150px);
+                                height: px2rem(140px);
+                                background-color: rgba(255, 255, 255, 0.7);
+                                @include img('../assets/icons/commentReward/gifts_active.png',100% 100%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .item-reward-integral{
+            height: px2rem(218px);
+            text-align: center;
+            padding-top: px2rem(25px);
+            position: relative;
+            border-top: 1px solid #ccc;
+            >.integral{
+                width: 4.44444rem;
+                font-size: px2rem(24px);
+                display: inline-block;
+                >div{
+                    &:nth-of-type(1){
+                        width: px2rem(120px);
+                        height: px2rem(88px);
+                        margin: auto;
+                        @include img('../assets/icons/commentReward/mouth.png',100% 100%);
+                    }
+                    &:nth-of-type(2){
+                        color: #f5bc00;
+                        text-align: center;
+                        position: relative;
+                        &:after{
+                            content: "";
+                            width: px2rem(16px);
+                            height: px2rem(16px);
+                            display: inline-block;
+                            margin-left: px2rem(6px);
+                            @include img('../assets/icons/commentReward/integral.png',100% 100%);
+                        }
+                    }
+                }
+                &:nth-of-type(2){
+                    >div{
+                        &:nth-of-type(1){
+                            // width: px2rem(76px);
+                            // height: px2rem(90px);
+                            @include img('../assets/icons/commentReward/flower.png',100% 100%);
+                        }
+                    }
+                }
+                &:nth-of-type(3){
+                    >div{
+                        &:nth-of-type(1){
+                            @include img('../assets/icons/commentReward/chocolate.png',100% 100%);
+                        }
+                    }
+                }
+                &:nth-of-type(4){
+                    >div{
+                        &:nth-of-type(1){
+                            @include img('../assets/icons/commentReward/car.png',100% 100%);
+                        }
+                    }
+                }
+                &.insuInte{
+                    >div{
+                        position: relative;
+                        &:nth-of-type(1){
+                            &:before{
+                                content: "";
+                                position: absolute;
+                                left: -8px;
+                                width: px2rem(150px);
+                                height: px2rem(140px);
+                                background-color: rgba(255, 255, 255, 0.8);
+                                @include img('../assets/icons/commentReward/integral_active.png',100% 100%);
+                            }
+                        }
+                    }
+                    &:nth-of-type(2){
+                        >div{
+                            &:nth-of-type(1){
+                                &:before{
+                                }
+                            }
+                        }
+                    }
+                }
+                &.active{
+                    >div{
+                        position: relative;
+                        &:nth-of-type(1){
+                            &:before{
+                                content: "";
+                                position: absolute;
+                                top: 0;
+                                left: -8px;
+                                width: px2rem(150px);
+                                height: px2rem(140px);
+                                background-color: rgba(255, 255, 255, 0.7);
+                                @include img('../assets/icons/commentReward/gift_active.png',100% 100%);
+                            }
+                        }
+                    }
+                }
+            }
+            >.user-integral{
+                font-size: px2rem(22px);
+                float: right;
+                margin-right: px2rem(33px);
+                color: #a4695f;
+            }
+        }
+    }
+    .item-two-comment{
+        >.item{
+            width: 100%;
+            height: px2rem(321px);
+            @include img('../assets/icons/commentReward/banner01.png',100% 100%);
+            &.active{
+                @include img('../assets/icons/commentReward/banner02.png',100% 100%);
+            }
+        }
+        >.item-reward{
+            >.item-reward-money{
+                height: px2rem(188px);
+                border-top: 1px solid transparent;
+                margin-top: px2rem(10px);
+            }
+            >.item-reward-integral{
+                height: px2rem(188px);
+                >.user-integral{
+                    margin-top: px2rem(10px);
+                }
+            }
+        }
+    }
+    .item-submit-button{
+        height: px2rem(88px);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #ff6666;
+        text-align: center;
+        line-height: px2rem(88px);
+        color: #fff;
+        &.active{
+            background-color: #999;
+        }
+    }
+
+    .item-comment-success{
+        >div{
+            width: px2rem(590px);
+            height: px2rem(375px);
+            background-color: #fff;
+            border-radius: px2rem(12px);
+            position: absolute;
+            left: 50%;
+            margin-left: px2rem(-295px);
+            top: px2rem(383px);
+            >div{
+                &:nth-of-type(1){
+                    width: px2rem(94px);
+                    height: px2rem(94px);
+                    margin: px2rem(43px) auto 0;
+                    @include img('../assets/icons/commentReward/success.png',100% 100%);
+                }
+                &:nth-of-type(2){
+                    font-size: px2rem(40px);
+                    text-align: center;
+                    margin-top: px2rem(34px);
+                    color: #4a4a4a;
+                }
+                &:nth-of-type(3){
+                    height: px2rem(120px);
+                    border-top: 1px solid #eee;
+                    margin-top: px2rem(25px);
+                    >div{
+                        width: px2rem(475px);
+                        height: px2rem(80px);
+                        line-height: px2rem(80px);
+                        background-color: #ff6666;
+                        border-radius: px2rem(12px);
+                        position: absolute;
+                        bottom: px2rem(20px);
+                        text-align: center;
+                        color: #fff;
+                        margin-left: px2rem(57px);
+                    }
+                }
+            }
+        }
+    }
+
+    .item-comment-reward{
+        >div{
+            width: px2rem(590px);
+            height: px2rem(545px);
+            background-color: #fff;
+            border-radius: px2rem(12px);
+            position: absolute;
+            left: 50%;
+            margin-left: px2rem(-295px);
+            top: px2rem(293px);
+            >div{
+                &:nth-of-type(1){
+                    width: px2rem(151px);
+                    height: px2rem(151px);
+                    margin: px2rem(27px) auto 0;
+                    @include img('../assets/icons/commentReward/dashang.png',100% 100%);
+                }
+                &:nth-of-type(2){
+                    text-align: center;
+                    color: #4a4a4a;
+                    font-size: px2rem(40px);
+                    margin-top: px2rem(25px);
+                }
+                &:nth-of-type(3){
+                    width: px2rem(495px);
+                    height: px2rem(80px);
+                    background-color: #fafafa;
+                    border-radius: px2rem(12px);
+                    border: 1px solid #e5e5e5;
+                    margin: px2rem(38px) auto 0;
+                    padding: 0 px2rem(21px);
+                    >input{
+                        width: 100%;
+                        height: 100%;
+                        color: #ff6666;
+                    }
+                    input::-webkit-input-placeholder {
+                        color: #ccc;
+                    }
+                }
+                &:nth-of-type(4){
+                    height: px2rem(120px);
+                    margin-top: px2rem(25px);
+                    >div{
+                        width: px2rem(475px);
+                        height: px2rem(80px);
+                        line-height: px2rem(80px);
+                        background-color: #ff6666;
+                        border-radius: px2rem(12px);
+                        position: absolute;
+                        bottom: px2rem(20px);
+                        text-align: center;
+                        color: #fff;
+                        left: px2rem(57px);
+                    }
+                }
+            }
+            >span{
+                width: px2rem(21px);
+                height: px2rem(21px);
+                position: absolute;
+                right: px2rem(30px);
+                top: px2rem(30px);
+                @include img('../assets/icons/commentReward/close.png',100% 100%);
+            }
+        }
+    }
+}

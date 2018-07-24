@@ -1,0 +1,486 @@
+@import "../common/mixin.scss";
+div#world-cup-page{
+    background: #081737;
+    
+    div.item-mask{
+        height: px2rem(88px);
+        color: #fff;
+        font-size: px2rem(32px);
+        z-index: 9;
+        position: fixed;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, .5);
+        >.item-pre{
+            width: px2rem(120px);
+            height: px2rem(64px);
+            line-height: px2rem(64px);
+            position: absolute;
+            text-align: center;
+            left: .7rem;
+            top: px2rem(12px);
+            border-radius: px2rem(12px);
+            background-color: rgba(0, 0, 0, .5);
+            &:nth-of-type(2){
+                margin-left: px2rem(135px);
+            }
+        }
+        >.item-next{
+            width: px2rem(120px);
+            height: px2rem(64px);
+            line-height: px2rem(64px);
+            top: px2rem(12px);
+            right: .7rem;
+            position: absolute;
+            text-align: center;
+            border-radius: px2rem(12px);
+            background-color: rgba(0, 0, 0, .5);
+        }
+        >.item-date{
+            text-align: center;
+            line-height: px2rem(88px);
+        }
+    }
+
+    div.item-container{
+        padding-bottom: px2rem(154px);
+        background: #081737;
+    }
+    div.top-bg{
+        width: px2rem(720px);
+        height: px2rem(507px);
+        @include img("../assets/icons/worldCup/bg_top.jpg",100% 100%);
+        .home{
+            position: absolute;
+            top: px2rem(100px);
+            width: px2rem(75px);
+            height: px2rem(75px);
+            @include imgBgFix(100% 100%);
+            right: px2rem(25px);
+            background-image: url("../assets/icons/worldCup/home.png");
+        }
+    }
+    div.item-start{
+        margin-top: -1rem;
+        >.item-bg{
+            width: px2rem(660px);
+            height: px2rem(378px);
+            margin: auto;
+            position: relative;
+            @include img("../assets/icons/worldCup/01.png",100% 100%);
+            >.item-title{
+                height: px2rem(92px);
+                font-size: px2rem(24px);
+                text-align: center;
+                line-height: 1rem;
+                padding-top: .5rem;
+                color: #082148;
+                position: relative;
+                &:before{
+                    content: "";
+                    position: absolute;
+                    width: px2rem(529px);
+                    height: px2rem(54px);
+                    left: 0;
+                    top: -0.7rem;
+                    @include img("../assets/icons/worldCup/highli.png",100% 100%);
+                }
+            }
+
+            >.item-title-expect{
+                height: px2rem(92px);
+                line-height: px2rem(92px);
+                color: #082148;
+                position: relative;
+                font-size: px2rem(32px);
+                text-align: center;
+            }
+
+            >.item-title-end{
+                height: px2rem(92px);
+                line-height: px2rem(92px);
+                color: #082148;
+                position: relative;
+                font-size: px2rem(32px);
+                margin-left: px2rem(30px);
+            }
+
+            >.item-country{
+                padding: px2rem(45px) px2rem(30px) px2rem(30px);
+                position: relative;
+                >div{
+                    width: px2rem(160px);
+                    height: px2rem(160px);
+                    border-radius: 100%;
+                    border: px2rem(5px) solid #8798b5;
+                    display: inline-block;
+                    text-align: center;
+                    color: #fff;
+                    @include img("../assets/icons/worldCup/ball.png",px2rem(174px) px2rem(174px));
+                    background-position: center;
+                    &:nth-of-type(2){
+                        float: right;
+                    }
+                    >span{
+                        margin-top: 4.5rem;
+                        font-size: px2rem(30px);
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+    div.item-over{
+        margin-top: -3.2rem;
+        >.item-bg{
+            height: px2rem(453px);
+            position: relative;
+            @include img("../assets/icons/worldCup/08.png",100% 100%);
+            &:before{
+                content: "";
+                position: absolute;
+                width: px2rem(529px);
+                height: px2rem(54px);
+                left: 0;
+                top: 1.5rem;
+                @include img("../assets/icons/worldCup/highli.png",100% 100%);
+            }
+            >div{
+                position: absolute;
+                width: px2rem(344px);
+                height: px2rem(231px);
+                margin: auto;
+                top: 5.5rem;
+                left: 50%;
+                margin-left: px2rem(-172px);
+                @include img("../assets/icons/worldCup/over.png", 100% 100%);
+            }
+        }
+    }
+
+    div.item-get-on{
+        margin-top: -1rem;
+        >.item-bg{
+            width: px2rem(660px);
+            height: px2rem(473px);
+            margin: auto;
+            @include img("../assets/icons/worldCup/02.png",100% 100%);
+            >.item-title{
+                height: px2rem(92px);
+                color: #082148;
+                position: relative;
+                &:before{
+                    content: "";
+                    position: absolute;
+                    width: px2rem(529px);
+                    height: px2rem(54px);
+                    left: 0;
+                    top: -.6rem;
+                    @include img("../assets/icons/worldCup/highli.png",100% 100%);
+                }
+                >div{
+                    display: inline-block;
+                    &:nth-of-type(1){
+                        font-size: px2rem(32px);
+                        margin-left: px2rem(30px);
+                        line-height: 2.55556rem;
+                    }
+                    &:nth-of-type(2){
+                        color: #000;
+                        float: right;
+                        margin-right: px2rem(42px);
+                        width: px2rem(300px);
+                        height: px2rem(63px);
+                        @include img("../assets/icons/worldCup/07.png", 100% 100%);
+                        position: relative;
+                        margin-top: px2rem(14px);
+                        padding-left: px2rem(25px);
+                        >p{
+                            margin-top: .15rem;
+                            >span{
+                                width: px2rem(62px);
+                                height: px2rem(42px);
+                                font-size: px2rem(34px);
+                                color: #000000;
+                                display: inline-block;
+                                text-align: center;
+                                line-height: px2rem(42px);
+                                margin-left: -.25rem;
+                                @include img("../assets/icons/worldCup/down.png", 100% 100%);
+                                >span{
+                                    width: px2rem(62px);
+                                    height: px2rem(42px);
+                                    display: inline-block;
+                                    text-align: center;
+                                }
+                                >i{
+                                    color: #fff;
+                                    display: inline-block;
+                                    height: px2rem(42px);
+                                    font-size: px2rem(24px);
+                                    line-height: px2rem(42px);
+                                    margin-left: .1rem;
+                                }
+                            }
+                            >i{
+                                color: #fff;
+                                display: inline-block;
+                                height: px2rem(42px);
+                                font-size: px2rem(24px);
+                                line-height: px2rem(42px);
+                                margin-left: .1rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            >.item-country{
+                padding: px2rem(45px) px2rem(30px) 0;
+                position: relative;
+                >div{
+                    width: px2rem(160px);
+                    height: px2rem(160px);
+                    border-radius: 100%;
+                    border: px2rem(5px) solid #8798b5;
+                    display: inline-block;
+                    background-position: center;
+                    text-align: center;
+                    color: #fff;
+                    @include img("../assets/icons/worldCup/ball.png",px2rem(174px) px2rem(174px));
+                    &:nth-of-type(1){
+                    }
+                    &:nth-of-type(2){
+                        float: right;
+                    }
+                    >span{
+                        margin-top: 4.5rem;
+                        font-size: px2rem(30px);
+                        display: inline-block;
+                    }
+                }
+            }
+
+            >div.item-btn-vs{
+                padding: px2rem(30px) px2rem(20px) 0;
+                display: flex;
+                >div{
+                    width: px2rem(200px);
+                    height: px2rem(93px);
+                    flex: 1;
+                    text-align: center;
+                    font-size: px2rem(30px);
+                    line-height: px2rem(35px);
+                    padding: px2rem(10px) 0;
+                    color: #1c3d70;
+                    @include img("../assets/icons/worldCup/btn_gray.png",px2rem(200px) px2rem(93px));
+                    background-position: center;
+                    &:nth-of-type(2){
+                        line-height: px2rem(73px);
+                    }
+                    &.active{
+                        color: #57320b;
+                        @include img("../assets/icons/worldCup/btn_yellow.png",100% 100%);
+                    }
+                }
+            }
+
+            >.item-result{
+                width: px2rem(587px);
+                height: px2rem(90px);
+                @include img("../assets/icons/worldCup/09.png",100% 100%);
+                color: #fff;
+                margin: px2rem(10px) auto 0;
+                font-size: px2rem(30px);
+                line-height: px2rem(35px);
+                padding: px2rem(12px) 0 px2rem(20px) px2rem(150px);
+                text-shadow: 0.1em 0.1em 0.05em #333;
+            }
+        }
+    }
+
+    div.item-gift{
+        width: px2rem(660px);
+        height: px2rem(396px);
+        margin: auto;
+        margin-top: px2rem(58px);
+        @include img("../assets/icons/worldCup/gift_bg.png",100% 100%);
+        position: relative;
+        >.awaits{
+            width: px2rem(660px);
+            height: px2rem(359px);
+            position: absolute;
+            top: px2rem(37px);
+            @include img("../assets/icons/worldCup/mask_01.png",100% 100%);
+        }
+        >.notWinning{
+            width: px2rem(189px);
+            height: px2rem(158px);
+            position: absolute;
+            top: px2rem(-10px);
+            right: 0;
+            @include img("../assets/icons/worldCup/not_winning.png",100% 100%);
+        }
+        >.winning{
+            width: px2rem(367px);
+            height: px2rem(343px);
+            position: absolute;
+            top: px2rem(-110px);
+            right: px2rem(-30px);
+            @include img("../assets/icons/worldCup/winning.png",100% 100%);
+        }
+        >.notParticipate{
+            width: px2rem(189px);
+            height: px2rem(158px);
+            position: absolute;
+            top: px2rem(-10px);
+            right: 0;
+            @include img("../assets/icons/worldCup/not_participate.png",100% 100%);
+        }
+        >.item-title{
+            font-size: px2rem(32px);
+            color: #03fafc;
+            text-align: center;
+            line-height: 1.8rem;
+        }
+        >.item-class-gift{
+            padding: 0 px2rem(30px);
+            margin-top: px2rem(25px);
+            display: flex;
+            >div{
+                flex: 1;
+                font-size: px2rem(22px);
+                text-align: center;
+                color: #fff;
+                line-height: .7rem;
+                width: px2rem(137px);
+                height: px2rem(164px);
+                background-position: center;
+                padding: 0 .5rem;
+                position: relative;
+                >i{
+                    display: block;
+                    font-size: 0.57rem;
+                    margin-top: 3.6rem;
+                }
+                >span{
+                    width: 3rem;
+                    display: inline-block;
+                    margin-top: .4rem;
+                    >span{
+                        height: 1.4rem;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                    }
+                }
+            }
+            .couponType0{
+                @include img("../assets/icons/worldCup/integral.png",px2rem(137px) px2rem(164px));
+            }
+            .couponType1{
+                @include img("../assets/icons/worldCup/gift.png",px2rem(137px) px2rem(164px));
+            }
+            .couponType2{
+                @include img("../assets/icons/worldCup/coupon.png",px2rem(137px) px2rem(164px));
+            }
+            .couponType3{
+                @include img("../assets/icons/worldCup/item.png",px2rem(137px) px2rem(164px));
+            }
+
+            &.active{
+                .couponType0{
+                    @include img("../assets/icons/worldCup/integral_gray.png",px2rem(137px) px2rem(164px));
+                }
+                .couponType1{
+                    @include img("../assets/icons/worldCup/gift_gray.png",px2rem(137px) px2rem(164px));
+                }
+                .couponType2{
+                    @include img("../assets/icons/worldCup/coupon_gray.png",px2rem(137px) px2rem(164px));
+                }
+                .couponType3{
+                    @include img("../assets/icons/worldCup/item_gray.png",px2rem(137px) px2rem(164px));
+                }
+            }
+        }
+        >.item-describe{
+            font-size: px2rem(28px);
+            color: #d4bd89;
+            text-align: center;
+            margin-top: 2.2rem;
+            >span{
+                color: #1b93f3;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    div.item-bottom{
+        height: px2rem(120px);
+        background-color: rgba(8, 23, 55, .9);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    div.item-btn{
+        width: px2rem(660px);
+        height: px2rem(88px);
+        color: #57320b;
+        font-size: px2rem(40px);
+        text-align: center;
+        line-height: px2rem(88px);
+        position: fixed;
+        bottom: px2rem(17px);
+        left: 50%;
+        margin-left: px2rem(-330px);
+        @include img("../assets/icons/worldCup/btn.png",100% 100%);
+        &.active{
+            color: #3c3c3c;
+            @include img("../assets/icons/worldCup/btn_disable.png",100% 100%);
+        }
+    }
+
+    div.item-end{
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 999;
+        background-color: rgba(0, 0, 0, .55);
+        >div{
+            width: px2rem(530px);
+            height: px2rem(600px);
+            background-color: #fff;
+            border-radius: px2rem(12px);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: px2rem(-265px);
+            margin-top: px2rem(-300px);
+            >div{
+                &:nth-of-type(1){
+                    width: px2rem(279px);
+                    height: px2rem(378px);
+                    @include img("../assets/icons/worldCup/end.png",100% 100%);
+                    margin: 2rem auto 0;
+                }
+                &:nth-of-type(2){
+                    height: px2rem(96px);
+                    font-size: px2rem(38px);
+                    line-height: px2rem(96px);
+                    color: #4c4c4c;
+                    border-top: 0.02rem solid #eee;
+                    text-align: center;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}
